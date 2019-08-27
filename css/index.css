@@ -129,3 +129,13 @@ table {
 * {
   box-sizing: border-box;
 }
+h1 {
+  font-family: 'Rokkitt', serif;
+}
+h2,
+h3 {
+  font-family: 'IM Fell Great Primer', serif;
+}
+h4 {
+  font-family: 'ABeeZee', sans-serif;
+}
