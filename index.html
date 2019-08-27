@@ -13,7 +13,7 @@
 <body>
     <div class="container all">
         <header>
-            <div class="logo">
+            <div class="box" id="logo">
                 <img src="#" alt="Dad Jokes Logo">
             </div>
             <nav>
@@ -23,37 +23,49 @@
             </nav>
         </header>
 
-        <div class="container home">
-            <div class="content-box">
-                <div class="searchbar">Searchbar</div>
+        <div class="container homepage">
+            <div class="box" id="homepage-content">
+                <div class="box" id="homepage-fields">
+                    <div class="box" id="write-joke">Write Joke</div>
+                    <div class="box" id="searchbar">Searchbar</div>
+                </div>                
+
+                <div class="box desktop" id="joke-box-desktop">
+                    <div class="box" id="desktop-top">
+                        <div class="button prev">&lt</div>
+                        <div class="jokes">Jokes</div>
+                        <div class="button next">></div>
+                    </div>
+                    <div class="box" id="desktop-bottom">
+                        <div class="random-button">?</div>
+                    </div>
+                </div>
+                <div class="box tablet-and-mobile" id="joke-box-tablet-and-mobile">
+                    <div class="box" id="tablet-and-mobile-top">
+                        <div class="jokes">Jokes</div>
+                    </div>
+                    <div class="box" id="tablet-and-mobile-bottom">
+                        <div class="button prev">&lt</div>
+                        <div class="random-button">?</div>
+                        <div class="button next">></div>
+                    </div>
+                </div>
             </div>
 
-            <div class="joke-box desktop">
-                <div class="top">
-                    <div class="button prev">&lt</div>
-                    <div class="jokes">Jokes</div>
-                    <div class="button next">></div>
-                </div>
-                <div class="bottom">
-                    <div class="random-button">?</div>
-                </div>
-            </div>
-            <div class="joke-box tablet-and-mobile">
-                <div class="top">
-                    <div class="jokes">Jokes</div>
-                </div>
-                <div class="bottom">
-                    <div class="button prev">&lt</div>
-                    <div class="random-button">?</div>
-                    <div class="button next">></div>
-                </div>
-            </div>
+        </div>
+
+        <div class="container joke-wallet">
+
+        </div>
+
+        <div class="container login-signup">
+
         </div>
 
         <footer>
-            <div class="text-box">Share Joke:</div>
+            <div class="box" id="footer-textbox">Share Joke:</div>
             <img src="#" alt="Facebook"><a href="#"></a>
-            <img src="#" alt="Twitter"><a href="#"></a>      
+            <img src="#" alt="Twitter"><a href="#"></a>
             <img src="#" alt="Instagram"><a href="#"></a>
         </footer>
     </div>
