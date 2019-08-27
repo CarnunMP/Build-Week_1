@@ -139,3 +139,28 @@ h3 {
 h4 {
   font-family: 'ABeeZee', sans-serif;
 }
+.container.all {
+  background: pink;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+header {
+  background: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+footer {
+  background: purple;
+  width: 100%;
+}
+.homepage {
+  background: green;
+  width: 100%;
+}
