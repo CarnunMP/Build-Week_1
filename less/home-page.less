@@ -11,7 +11,65 @@
 }
 
 .homepage {
-    background:  @pastel-grey;
+    background:  @matte-grey;
     width: 100%;
     flex-grow: 1;
+    .flex(column, center, center);
+}
+
+#homepage-content {
+    border: 2px solid blue;
+    width: 80%;
+    height: 70%;
+    .flex(column, flex-start, center);
+
+    #homepage-fields {
+        border: 2px solid green;
+        width: 100%;
+        .flex(row, space-between, center);
+
+        .box {
+            background: @dark-grey;
+            border: 5px solid @darker-grey;
+            .flex(row, center, center);
+            height: 4rem;
+            padding: 0 1rem;
+            margin: 0 1rem;
+        }
+    }
+
+    .desktop {
+        border: 2px solid red;
+        width: 100%;
+        .flex(column, center, center);
+        flex-grow:1;
+
+        #desktop-top {
+            .flex(row, center, center);
+            border: 2px solid green;
+            height: 90%;
+            width: 100%;
+
+            .jokes {
+                background: pink;
+                flex-grow: 1;
+                height: 95%;
+            }
+        }
+        #desktop-bottom {
+            border: 2px solid orangered;
+        }
+    }
+
+    .button {
+        border: 5px solid @darker-grey;
+        background: @dark-grey;
+        width: 5rem;
+        height: 5rem;
+        .flex(row, center, center);
+    }
+
+    .tablet-and-mobile {
+        display: none;
+    }
 }
