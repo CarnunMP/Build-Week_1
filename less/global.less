@@ -49,7 +49,7 @@ header {
         flex-grow: 1;
         padding: 0rem 1rem;
 
-        a {
+        div {
             background: @dark-grey;
             border: 5px solid @pastel-khaki;
             height: 4rem;
@@ -58,6 +58,10 @@ header {
             .flex(row, center, center);
             text-decoration: none;
             color: black;
+
+            &:hover {
+                background: red;
+            }
         }
     }
 }
