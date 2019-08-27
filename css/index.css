@@ -299,3 +299,9 @@ footer a {
 #homepage-content .tablet-and-mobile {
   display: none;
 }
+.container.joke-wallet {
+  display: none;
+}
+.container.login-signup {
+  display: none;
+}

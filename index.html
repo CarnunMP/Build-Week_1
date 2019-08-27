@@ -23,13 +23,13 @@
                 <h1>Dad Jokes</h1>
             </div>
             <nav>
-                <div class="button home" onclick="toggleHomepage()">
+                <div class="button home" onclick="switchTo('container homepage')">
                     <h2>Home</h2>
                 </div>
-                <div class="button joke-wallet">
+                <div class="button joke-wallet" onclick="switchTo('container joke-wallet')">
                     <h2>Joke Wallet</h2>
                 </div>
-                <div class="button login-signup">
+                <div class="button login-signup" onclick="switchTo('container login-signup')">
                     <h2>Login / Signup</h2>
                 </div>
             </nav>
@@ -87,11 +87,11 @@
         </div>
 
         <div class="container joke-wallet">
-
+            Joke Wallet
         </div>
 
         <div class="container login-signup">
-
+            Login-signup
         </div>
 
         <footer>
