@@ -299,9 +299,6 @@ footer a {
 #homepage-content .tablet-and-mobile {
   display: none;
 }
-.container.login-signup {
-  display: none;
-}
 .container.joke-wallet {
   background: #7C7978;
   width: 100%;
@@ -349,4 +346,23 @@ footer a {
   justify-content: flex-start;
   align-items: center;
   padding: 1rem;
+}
+.container.login-signup {
+  background: #7C7978;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#login-signup-content {
+  border: 2px solid blue;
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
