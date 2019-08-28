@@ -11,10 +11,19 @@
     height: 90%;
     .flex(column, flex-start, center);
 
+    @media @mobile {
+        width: 95%;
+        height: 95%;
+    }
+
     #joke-wallet-fields {
         // border: 2px solid green;
         width: 75%;
         .flex(row, space-between, center);
+
+        @media @mobile {
+            width: 100%;
+        }
 
         .box {
             background: @dark-grey;
@@ -22,6 +31,10 @@
             .flex(row, center, center);
             height: 4rem;
             margin: 0 1rem;
+
+            @media @mobile {
+                height: 3rem;
+            }
         }
 
         #write-joke {
@@ -41,5 +54,9 @@
         margin-top: 1rem;
         .flex(column, flex-start, center);
         padding: 1rem;
+
+        @media @mobile {
+            margin-top: 0.5rem;
+        }
     }
 }

@@ -412,12 +412,23 @@ footer a {
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 500px) {
+  #joke-wallet-content {
+    width: 95%;
+    height: 95%;
+  }
+}
 #joke-wallet-content #joke-wallet-fields {
   width: 75%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  #joke-wallet-content #joke-wallet-fields {
+    width: 100%;
+  }
 }
 #joke-wallet-content #joke-wallet-fields .box {
   background: #36373A;
@@ -428,6 +439,11 @@ footer a {
   align-items: center;
   height: 4rem;
   margin: 0 1rem;
+}
+@media (max-width: 500px) {
+  #joke-wallet-content #joke-wallet-fields .box {
+    height: 3rem;
+  }
 }
 #joke-wallet-content #joke-wallet-fields #write-joke {
   flex-grow: 2;
@@ -446,6 +462,11 @@ footer a {
   justify-content: flex-start;
   align-items: center;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  #joke-wallet-content .joke-list {
+    margin-top: 0.5rem;
+  }
 }
 .container.login-signup {
   background: #7C7978;
