@@ -4,6 +4,11 @@
     flex-grow: 1;
     .flex(row, center, center);
     display: none;
+
+    @media @mobile {
+        position: absolute;
+        top: 25%;
+    }
 }
 
 #login-signup-content {
@@ -11,10 +16,18 @@
     height: 95%;
     .flex(row, center, center);
 
+    @media @mobile {
+        .flex(column, flex-start, center);
+    }
+
     .vertical-divider {
         border: 2px solid @darker-grey;
         height: 100%;
         margin: 0 10%;
+
+        @media @mobile {
+            display: none;
+        }
     }
 
     .box { // Applies to both #login and #signup
@@ -24,6 +37,11 @@
         background: @dark-grey;
         border: 10px solid @darker-grey;
         padding: 1rem;
+
+        @media @mobile {
+            min-height: auto;
+            margin: 0.5rem 0;
+        }
 
         form {
             width: 100%;

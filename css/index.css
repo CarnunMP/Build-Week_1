@@ -478,6 +478,12 @@ footer a {
   align-items: center;
   display: none;
 }
+@media (max-width: 500px) {
+  .container.login-signup {
+    position: absolute;
+    top: 25%;
+  }
+}
 #login-signup-content {
   width: 80%;
   height: 95%;
@@ -486,10 +492,23 @@ footer a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  #login-signup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 #login-signup-content .vertical-divider {
   border: 2px solid #2D2D35;
   height: 100%;
   margin: 0 10%;
+}
+@media (max-width: 500px) {
+  #login-signup-content .vertical-divider {
+    display: none;
+  }
 }
 #login-signup-content .box {
   display: flex;
@@ -501,6 +520,12 @@ footer a {
   background: #36373A;
   border: 10px solid #2D2D35;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  #login-signup-content .box {
+    min-height: auto;
+    margin: 0.5rem 0;
+  }
 }
 #login-signup-content .box form {
   width: 100%;
