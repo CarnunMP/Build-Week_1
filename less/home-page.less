@@ -14,6 +14,10 @@
     height: 90%;
     .flex(column, flex-start, center);
 
+    @media @mobile {
+        width: 90%;
+    }
+
     #homepage-fields {
         width: 75%;
         .flex(row, space-between, center);
@@ -41,6 +45,10 @@
         .flex(column, center, center);
         flex-grow:1;
 
+        @media @mobile {
+            display:none;
+        }
+
         #desktop-top {
             .flex(row, center, center);
             // border: 2px solid green;
@@ -58,16 +66,33 @@
         }
     }
 
+    .tablet-and-mobile {
+        width: 100%;
+        .flex(column, flex-start, center);
+        flex-grow: 1;
+        margin-top: 1rem;
+        display: none;
+
+        @media @mobile {
+            display: inherit;
+        }
+
+        #tablet-and-mobile-top {
+            background: green;
+            width: 100%;
+            height: 100%;
+            .flex(row, center, center);
+            background: @dark-grey;
+            border: 10px solid @darker-grey;
+        }
+    }
+
     .button {
         border: 5px solid @darker-grey;
         background: @dark-grey;
-        width: 5rem;
-        height: 5rem;
+        width: 3rem;
+        height: 3rem;
         margin: 1rem 1rem;
         .flex(row, center, center);
-    }
-
-    .tablet-and-mobile {
-        display: none;
     }
 }

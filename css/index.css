@@ -277,6 +277,11 @@ footer a {
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 500px) {
+  #homepage-content {
+    width: 90%;
+  }
+}
 #homepage-content #homepage-fields {
   width: 75%;
   display: flex;
@@ -308,6 +313,11 @@ footer a {
   align-items: center;
   flex-grow: 1;
 }
+@media (max-width: 500px) {
+  #homepage-content .desktop {
+    display: none;
+  }
+}
 #homepage-content .desktop #desktop-top {
   display: flex;
   flex-direction: row;
@@ -327,19 +337,42 @@ footer a {
   flex-grow: 1;
   height: 100%;
 }
+#homepage-content .tablet-and-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  margin-top: 1rem;
+  display: none;
+}
+@media (max-width: 500px) {
+  #homepage-content .tablet-and-mobile {
+    display: inherit;
+  }
+}
+#homepage-content .tablet-and-mobile #tablet-and-mobile-top {
+  background: green;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #36373A;
+  border: 10px solid #2D2D35;
+}
 #homepage-content .button {
   border: 5px solid #2D2D35;
   background: #36373A;
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   margin: 1rem 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-#homepage-content .tablet-and-mobile {
-  display: none;
 }
 .container.joke-wallet {
   background: #7C7978;
