@@ -8,19 +8,19 @@
 
 #login-signup-content {
     width: 80%;
-    height: 70%;
+    height: 95%;
     .flex(row, center, center);
 
     .vertical-divider {
         border: 2px solid @darker-grey;
         height: 100%;
-        margin: 0 8rem;
+        margin: 0 10%;
     }
 
     .box { // Applies to both #login and #signup
         .flex(column, flex-start, flex-start);
         width: 22rem;
-        min-height: 43rem;
+        min-height: 90%;
         background: @dark-grey;
         border: 10px solid @darker-grey;
         padding: 1rem;
@@ -30,12 +30,16 @@
         }
 
         h2 {
-            font-size: 4rem;
-            margin-bottom: 5rem;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
         }
 
         input {
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             height: 2rem;
             width: 100%;
             color: @chalky-white;
@@ -46,6 +50,9 @@
         input:nth-last-of-type(1) { // Selects the 'Submit' button
             margin-top: 2rem;
             width: 70%;
+            height: 3rem;
+            font-family: 'IM Fell Great Primer', serif;
+            font-size: 1.5rem;
         }
     }
 }
