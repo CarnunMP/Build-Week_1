@@ -2,4 +2,5 @@
 
 To-do:
   [] Fix HTML inconsistencies (classes and IDs)
-  [] Fix scaling! (Sized everything according to 50% zoom! -_-)
+  [x] Fix scaling! (Sized everything according to 50% zoom! -_-)
+  [] Fix text wrapping in header from 1000px+
