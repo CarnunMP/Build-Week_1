@@ -13,16 +13,23 @@
 
     #joke-wallet-fields {
         // border: 2px solid green;
-        width: 100%;
-        .flex(row, center, center);
+        width: 75%;
+        .flex(row, space-between, center);
 
         .box {
             background: @dark-grey;
             border: 5px solid @darker-grey;
             .flex(row, center, center);
             height: 4rem;
-            padding: 0 1rem;
             margin: 0 1rem;
+        }
+
+        #write-joke {
+            flex-grow: 2;
+        }
+
+        #searchbar {
+            flex-grow: 1;
         }
     }
 
