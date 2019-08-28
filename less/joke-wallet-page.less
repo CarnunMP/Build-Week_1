@@ -1,0 +1,38 @@
+.container.joke-wallet {
+    background: @grey;
+    width: 100%;
+    flex-grow: 1;
+    .flex(column, center, center);
+
+    display: none;
+}
+
+#joke-wallet-content {
+    width: 80%;
+    height: 90%;
+    .flex(column, flex-start, center);
+
+    #joke-wallet-fields {
+        // border: 2px solid green;
+        width: 100%;
+        .flex(row, center, center);
+
+        .box {
+            background: @dark-grey;
+            border: 5px solid @darker-grey;
+            .flex(row, center, center);
+            height: 4rem;
+            padding: 0 1rem;
+            margin: 0 1rem;
+        }
+    }
+
+    .joke-list {
+        background: @dark-grey;
+        border: 10px solid @darker-grey;
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+        .flex(column, flex-start, center);
+    }
+}
