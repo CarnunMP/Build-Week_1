@@ -16,11 +16,16 @@
 
     @media @mobile {
         width: 90%;
+        height: 95%;
     }
 
     #homepage-fields {
         width: 75%;
         .flex(row, space-between, center);
+
+        @media @mobile {
+            width: 100%;
+        }
 
         .box {
             background: @dark-grey;
@@ -28,6 +33,10 @@
             .flex(row, center, center);
             height: 4rem;
             margin: 0 1rem;
+
+            @media @mobile {
+                height: 3rem;
+            }
         }
 
         #write-joke {
@@ -46,7 +55,7 @@
         flex-grow:1;
 
         @media @mobile {
-            display:none;
+            display: none;
         }
 
         #desktop-top {
@@ -70,7 +79,7 @@
         width: 100%;
         .flex(column, flex-start, center);
         flex-grow: 1;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         display: none;
 
         @media @mobile {
@@ -78,7 +87,6 @@
         }
 
         #tablet-and-mobile-top {
-            background: green;
             width: 100%;
             height: 100%;
             .flex(row, center, center);
@@ -92,7 +100,11 @@
         background: @dark-grey;
         width: 3rem;
         height: 3rem;
-        margin: 1rem 1rem;
+        margin: 1rem;
         .flex(row, center, center);
+
+        @media @mobile {
+            margin-bottom: 0;
+        }
     }
 }
