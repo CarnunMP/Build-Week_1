@@ -152,11 +152,12 @@ h3 {
 }
 h4 {
   font-family: 'ABeeZee', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
 }
 @media (max-width: 500px) {
   h4 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 .container.all {
@@ -353,7 +354,6 @@ footer a {
   flex-grow: 1;
   height: 100%;
   padding: 1rem;
-  line-height: 2rem;
 }
 #homepage-content .tablet-and-mobile {
   width: 100%;
@@ -380,7 +380,6 @@ footer a {
   background: #36373A;
   border: 10px solid #2D2D35;
   padding: 1rem;
-  line-height: 2rem;
 }
 #homepage-content .button {
   border: 5px solid #2D2D35;
