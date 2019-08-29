@@ -1,0 +1,76 @@
+.container.login-signup {
+    background: @grey;
+    width: 100%;
+    flex-grow: 1;
+    .flex(row, center, center);
+    display: none;
+
+    @media @mobile {
+        position: absolute;
+        top: 25%;
+    }
+}
+
+#login-signup-content {
+    width: 80%;
+    height: 95%;
+    .flex(row, center, center);
+
+    @media @mobile {
+        .flex(column, flex-start, center);
+    }
+
+    .vertical-divider {
+        border: 2px solid @darker-grey;
+        height: 100%;
+        margin: 0 10%;
+
+        @media @mobile {
+            display: none;
+        }
+    }
+
+    .box { // Applies to both #login and #signup
+        .flex(column, flex-start, flex-start);
+        width: 22rem;
+        min-height: 90%;
+        background: @dark-grey;
+        border: 10px solid @darker-grey;
+        padding: 1rem;
+
+        @media @mobile {
+            min-height: auto;
+            margin: 0.5rem 0;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        input {
+            margin-bottom: 0.5rem;
+            height: 2rem;
+            width: 100%;
+            color: @chalky-white;
+            background: @darker-grey;
+            border: 5px solid @grey;
+        }
+
+        input:nth-last-of-type(1) { // Selects the 'Submit' button
+            margin-top: 2rem;
+            width: 70%;
+            height: 3rem;
+            font-family: 'IM Fell Great Primer', serif;
+            font-size: 1.5rem;
+        }
+    }
+}

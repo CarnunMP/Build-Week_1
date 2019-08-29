@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    color: @chalky-white;
+}
+
+h1 {
+    font-family: 'Rokkitt', serif;
+    font-size: 4.5rem;
+}
+
+h2, h3 {
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: 2rem;
+
+    @media @mobile {
+        font-size: 1.5rem;
+    }
+}
+
+h4 {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3rem;
+
+    @media @mobile {
+        font-size: 2rem;
+    }
+}
+
+.container.all {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    .flex(column);
+}
+
+header {
+    background: @darker-grey;
+    .flex(row, space-between, center);
+    width: 100%;
+    height: 18%;
+    padding: 1rem;
+
+    @media @mobile {
+        height: 25%;
+        .flex(column, flex-start, center);
+        padding: 0.5rem 0rem;
+    }
+
+    #title {
+        .flex(row, flex-start, center);
+        padding-right: 1rem;
+        text-decoration: none;
+
+        #logo {
+            width: 100px;
+            height: 100px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    nav {
+        .flex(row, flex-end, center);
+        flex-grow: 1;
+        height: 90%;
+
+        @media @mobile {
+            .flex(row, space-between, center);
+            width: 100%;
+        }
+
+        .button {
+            background: @dark-grey;
+            border: 5px solid @grey;
+            height: 70%;
+            padding: 0 0.5rem;
+            margin: 0 2%;
+            .flex(row, center, center);
+            text-decoration: none;
+
+            h2 {
+                white-space: nowrap;
+            }
+
+            @media @mobile {
+                height: 3rem;
+                margin: 0 3%;
+            }
+
+            &:hover {
+                background: @pastel-burgundy;
+            }
+        }
+
+
+    }
+}
+
+footer {
+    background: @darker-grey;
+    width: 100%;
+    height: 10%;
+    .flex(row, center, center);
+
+    a {
+        margin: 0 1rem;
+
+        @media @mobile {
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+.button:active {
+    background: @pastel-burgundy !important;
+}

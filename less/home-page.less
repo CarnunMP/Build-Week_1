@@ -1,0 +1,112 @@
+.box {
+    .flex();
+}
+
+.container.homepage {
+    background: @grey;
+    width: 100%;
+    flex-grow: 1;
+    .flex(column, center, center);
+}
+
+#homepage-content {
+    width: 80%;
+    height: 90%;
+    .flex(column, flex-start, center);
+
+    @media @mobile {
+        width: 90%;
+        height: 95%;
+    }
+
+    #homepage-fields {
+        width: 75%;
+        .flex(row, space-between, center);
+
+        @media @mobile {
+            width: 100%;
+        }
+
+        .box {
+            background: @dark-grey;
+            border: 5px solid @darker-grey;
+            .flex(row, center, center);
+            height: 4rem;
+            margin: 0 1rem;
+
+            @media @mobile {
+                height: 3rem;
+            }
+        }
+
+        #write-joke {
+            flex-grow: 2;
+        }
+
+        #searchbar {
+            flex-grow: 1;
+        }
+    }
+
+    .desktop {
+        // border: 2px solid red;
+        width: 100%;
+        .flex(column, center, center);
+        flex-grow:1;
+
+        @media @mobile {
+            display: none;
+        }
+
+        #desktop-top {
+            .flex(row, center, center);
+            // border: 2px solid green;
+            height: 90%;
+            width: 100%;
+            margin-top: 1rem;
+
+            .jokes {
+                border: 10px solid @darker-grey;
+                background: @dark-grey;
+                .flex(row, center, center);
+                flex-grow: 1;
+                height: 100%;
+                padding: 1rem;
+            }
+        }
+    }
+
+    .tablet-and-mobile {
+        width: 100%;
+        .flex(column, flex-start, center);
+        flex-grow: 1;
+        margin-top: 0.5rem;
+        display: none;
+
+        @media @mobile {
+            display: inherit;
+        }
+
+        #tablet-and-mobile-top {
+            width: 100%;
+            height: 100%;
+            .flex(row, center, center);
+            background: @dark-grey;
+            border: 10px solid @darker-grey;
+            padding: 1rem;
+        }
+    }
+
+    .button {
+        border: 5px solid @darker-grey;
+        background: @dark-grey;
+        width: 3rem;
+        height: 3rem;
+        margin: 1rem;
+        .flex(row, center, center);
+
+        @media @mobile {
+            margin-bottom: 0;
+        }
+    }
+}
