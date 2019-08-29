@@ -76,7 +76,7 @@ header {
             width: 100%;
         }
 
-        div {
+        .button {
             background: @dark-grey;
             border: 5px solid @grey;
             height: 70%;
@@ -93,7 +93,13 @@ header {
                 height: 3rem;
                 margin: 0 3%;
             }
+
+            &:hover {
+                background: @pastel-burgundy;
+            }
         }
+
+
     }
 }
 
@@ -112,6 +118,6 @@ footer {
     }
 }
 
-.button:hover {
+.button:active {
     background: @pastel-burgundy !important;
 }
