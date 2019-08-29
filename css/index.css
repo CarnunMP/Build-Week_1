@@ -352,6 +352,8 @@ footer a {
   align-items: center;
   flex-grow: 1;
   height: 100%;
+  padding: 1rem;
+  line-height: 2rem;
 }
 #homepage-content .tablet-and-mobile {
   width: 100%;
@@ -377,6 +379,8 @@ footer a {
   align-items: center;
   background: #36373A;
   border: 10px solid #2D2D35;
+  padding: 1rem;
+  line-height: 2rem;
 }
 #homepage-content .button {
   border: 5px solid #2D2D35;

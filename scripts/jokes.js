@@ -15,15 +15,15 @@ const jokesArray = [
     "A storm blew away 25% of my roof last night. oof"
 ];
 
-const prevButton = document.querySelector(".button.prev");
-const nextButton = document.querySelector(".button.next");
-const randomButton = document.querySelector(".button.random");
-const jokeBox = document.querySelector(".box.jokes");
+const prevButton = document.querySelectorAll(".button.prev");
+const nextButton = document.querySelectorAll(".button.next");
+const randomButton = document.querySelectorAll(".button.random");
+const jokeBox = document.querySelectorAll(".box.jokes");
 
 let i = 0;
 
 function displayQuote() {
-    jokeBox.innerHTML = `<h4>${jokesArray[i]}</h4>`
+    jokeBox.forEach(element => element.innerHTML = `<h4>${jokesArray[i]}</h4>`)
 }
 
 function increaseIndex() {
@@ -53,8 +53,10 @@ function randomiseIndex() {
     displayQuote();
 }
 
-nextButton.addEventListener("click", increaseIndex);
-prevButton.addEventListener("click", decreaseIndex);
-randomButton.addEventListener("click", randomiseIndex);
+for (let i = 0; i < 2; i++) {
+    nextButton[i].addEventListener("click", increaseIndex);
+    prevButton[i].addEventListener("click", decreaseIndex);
+    randomButton[i].addEventListener("click", randomiseIndex);
+}
 
 window.addEventListener('DOMContentLoaded', displayQuote); 
