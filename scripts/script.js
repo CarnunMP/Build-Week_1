@@ -11,7 +11,6 @@ function switchTo(pageName) {
 
     // Hide footer on login-signup page:
     if (pageName === "container login-signup") {
-        console.log("Yo!");
         document.getElementsByTagName("footer")[0].style.display = "none";
     } else {
         document.getElementsByTagName("footer")[0].style.display = "inherit";
